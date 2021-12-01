@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='es'>
+    <head>
+        <%- include('./templates/header')%>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <%- include('./templates/navbar')%>
+                </div>
+                <div class="card-body">
+                    <%if(insurance.length){%>
+                        <table class="table bm-2">
+                            <thead>
+                                <th>Apellidos</th>
+                                <th>Nombres</th>
+                                <th>Ciudad</th>
+                                <th>Teléfono</th>
+                                <th>Correo</th>
+                                <th>Género</th>
+                            </thead>
+                            <tbody>
+                                <% insurance.forEach(insurances => { %>
+                                    <tr>
+                                        <td><%= insurances.lastName %></td>
+                                        <td><%= insurances.name %></td>
+                                        <td><%= insurances.city %></td>
+                                        <td><%= insurances.phone %></td>
+                                        <td><%= insurances.email %></td>
+                                        <td><%= insurances.genAux %></td>
+                                    </tr>
+                                <%})%>
+                            </tbody>
+                        </table>
+                    <%}else{%>
+                        <h5>Empieza a anexar tus seguros!</h5>
+                    <%}%>
+                    <a class="btn btn-primary" href="/insert" role="button">Nuevo Seguro</a>
+                </div>
+            </div>
+        </div>
+        <%- include('./templates/footer')%>
+    </body>
+</html>

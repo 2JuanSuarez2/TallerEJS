@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='es'>
+<head>
+    <%- include('./templates/header')%>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <%- include('./templates/navbar')%>
+        </div>
+        
+    </div>
+</div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ¿Que tipo de empresa somos?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        Somos una empresa intermediaria de seguros, que trabaja constantemente en ofrecer una asesoría adecuada para cada uno de nuestros clientes,
+        entendiendo sus necesidades y brindándoles las mejores alternativas en seguros, garantizando la prestación de un servicio personalizado, orientado, y de confianza.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Misión
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Ayudaremos a nuestros clientes a localizar la mejor alternativa para la protección de sus riesgos, acompañándolos en el proceso 
+            y brindándoles las mejores soluciones de acuerdo a sus necesidades, garantizando la calidad, la integridad y la honestidad del servicio. 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Visión
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Ser la empresa líder en intermediación de seguros altamente especializada y, distinguida tanto por su innovación como empresa, como por su lealtad, compromiso y cumplimiento hacia los clientes.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h4>Seguros que pueden ser almacenados</h4>
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Riesgos laborales
+    </div>
+
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Responsabilidades</li>
+      <li class="list-group-item">Vehículos</li>
+      <li class="list-group-item">Todo Riesgo</li>
+      <li class="list-group-item">SOAT</li>
+      <li class="list-group-item">Cumplimiento</li>
+      <li class="list-group-item">Mascotas</li>
+      <li class="list-group-item">Transporte</li>
+      <li class="list-group-item">Robo</li>
+      <li class="list-group-item">Crédito</li>
+      <li class="list-group-item">Incendio</li>
+    </ul>
+  </div>
+<%- include('./templates/footer')%>
+</body>
+</html>
